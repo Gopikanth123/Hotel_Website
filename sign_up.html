@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Samanvay Login form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/FontAwesome.otf'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css.map'><link rel="stylesheet" href="./style.css">
+<style>
+body {
+  background: url('https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family:sans-serif;
+}
+.box {
+  background-color: rgb(225, 213, 217);
+  width: 450px;
+  border: 1px solid rgb(21, 23, 21);
+  margin-left:  35%;
+  margin-right: 35%;
+  margin-top: 50px;
+  border-radius: 25px;
+}
+
+
+
+/*Start form style*/
+form {
+  background-image: url('http://ryokb95.upload-website.com/login-signupform/imgs/1.jpg');
+  height: 550px;
+  width: 300px;
+  margin: 60px auto;
+  border-radius: 8px
+}
+button{box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.58);}
+/*End form style*/
+
+
+
+/*****************************************/
+
+/*Start header*/
+form h1 {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.42);
+  padding-top: 64px;
+}
+
+form p {
+  color: #0f1010;
+  font-size: 11px;
+  text-align: center;
+  margin-top: -19px;
+}
+ /*The link of the site in the p tag ***/
+form p>a{color:#afb8ce;text-decoration: none;transition: 0.3s }
+form p>a:hover{color: #1da1f2}
+form p>a:active{color: #1da1f2 }
+/*End login header*/
+
+
+/* Start the input-info style*/
+.input-info {margin-top: 30px;margin-bottom: 15px}/*the containe div style*/
+input[type="text"],input[type="email"],input[type="password"]  {
+    border: 1px solid #828999;
+    padding: 10px;
+    border-radius: 5px;
+    width: 90%;
+    background: none;
+    color: rgb(14, 13, 13);
+    margin: 5px 5px 5px 17px;
+    outline: none;
+    transition: 0.3s;
+    text-indent: 15px;
+    overflow: hidden;
+}
+ 
+.fa-refresh, .fa-lock, 
+.fa-envelope, .fa-user-plus, 
+.fa-user {
+    position: absolute;
+    margin-top: 14px;
+    margin-left: 24px;
+    color: #828999;
+    display: block;
+}
+
+.input-info input:hover{background: #435688}
+.input-info input[type="checkbox"] {margin-left: 17px;cursor: pointer;margin-top: 7px}
+.input-info span {color: #83899a;font-size: 11px;}
+.input-info span>a{color:#1da1f2 }
+.input-info span>a:hover{color:#fff }
+
+/*End the input-info style*/ 
+
+/*start the tow button login and sign up*/
+.log-sign{text-align: center;}/*the containe div style*/
+.signup,
+.login{/*button login style*/
+    padding: 10px;
+    margin-top: 16px;
+    background: #435688;
+    color:rgb(255, 255, 255);
+    width: 103px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 1px solid #435688;
+    outline: none;
+}
+.signup {/*button signup style*/
+  background: #9e3434;
+  border: 1px solid #9e3434;
+}
+
+
+.log-sign .signup>a{color: #fff;text-decoration: none;}/*the signup link style*/
+.log-sign button:hover{
+   background:none;
+   border:1px solid #828999;
+   color: #828999;
+}
+
+.send{/*sugn up button at the signup.html page*/
+    padding: 10px;
+    margin-top: 16px;
+    background: #435688;
+    color: #fff;
+    width: 103px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 1px solid #435688;
+    outline: none;
+    margin-left: 32%
+}
+
+
+/*facebook social-media button style*/
+.social-media{margin-bottom: 35px;}
+.social-media .btn1 {/*facebook button*/
+  border: 0;
+  background: #3B5998;
+  color: #fff;
+  padding: 15px;
+  width: 90%;
+  margin-left: 16px;
+  margin-top: 14px;
+  border-radius: 5px;
+
+}
+.social-media .btn2 {/*twitter button*/
+  border: 0;
+  padding: 15px;
+  margin-top: 11px;
+  width: 90%;
+  margin-left: 16px;
+  border-radius: 5px;
+  background: #1DA1F2;
+  color: #fff;
+
+}
+.social-media button>a{color: #fff;text-decoration: none;}
+/************/
+
+.forget-password {text-align: center;}
+.forget-password a {color: #1da1f2;transition: 0.3s;text-decoration:underline;}
+.forget-password a:hover{color: #fff}
+.forget-password a:active{color: #fff}
+
+
+
+
+/*start form sign up*/
+</style>
+</head>
+<body>
+
+<div class='box'>
+<div id='AppendHere'></div>
+<form id="loginform" action="#"><!--action="the site link"-->
+	<!--start header-->
+	<h1 style="color: black;">LOG IN</h1>
+	<p style="color: black;">Samanvay</p>
+    <!--site link-->
+    <!--end site-->
+    
+    <div id="input-info">
+        <!--the input div containe the information of the user-->
+        <i class="fa fa-user"></i>
+        <!--user name-->
+        <input type="text" placeholder="User-Name">
+        <i class="fa fa-envelope"></i>
+        <!--user email-->
+        <input type="email" placeholder="E-mail" required autocomplete="off" validate>
+        <i class="fa fa-lock"></i>
+        <!--yser password-->
+        <input type="password" placeholder="Password">
+        <!--the checkbox to make the browser remember the user-->
+        <input type="checkbox">
+        <span>Remember Me</span><br>
+    </div>
+
+    <div class="log-sign">
+        <button class="login" form="loginform"><i class="fa fa-mail-forward (alias)"></i> Log In</button><!--log in-->
+
+        <!-- <a href="#">
+            <button class="signup" form="signupform"><i class="fa fa-plus"></i> Sign Up</button>
+        </a> -->
+    </div><!--end of the log-sign-->
+        
+    <div class="social-media"><!--sign up by fb and tw-->
+		<button class="btn1">
+		<a href="#" target="_blank"><i class="fa fa-facebook"></i> Sign up with facebook</a>
+		</button>
+
+		<button class="btn2">
+		<a href="#" target="_blank"><i class="fa fa-twitter"></i> Sign up with twitter</a>
+		</button>
+	</div>
+
+	<p class="forget-password">If you forget your password please <a href="#">click here</a></p>
+
+</form>
+</div>
+<!--End login form-->
+<!-- partial -->
+  
+</body>
+</html>
